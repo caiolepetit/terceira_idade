@@ -62,7 +62,11 @@ h2 {
 }
 
 .home-section {
-  padding-bottom: 110px;
+  padding-bottom: 70px;
+}
+
+.footer-section {
+  padding-top: 40px;
 }
 
 .divisor {
@@ -70,6 +74,14 @@ h2 {
 	border-color: #003b3a;
 	border-radius: 20px;
 	border-width: 2px 0 0 0;
+}
+
+.imagem-eventos {
+  margin-top: 30px;
+}
+
+.imagem-pacotes {
+  height: 80px;
 }
 
 /* Minha Galera */
@@ -84,19 +96,51 @@ h2 {
 
 /* Sobre */
 
-.parceiros h3{
+.parceiros-section h3{
   padding-bottom: 20px;
+}
+
+.logo-sobre {
+  width: 172px;
+  height: 71px;
 }
 
 /* Footer */
 			
 .foootervip {
-	/*position: relative;*/
   background-color: #73b298;
 	background-size:cover;
 	min-width:100px;
   width: 100%;
 	padding-bottom: 10px;
+  color: #fff;
+}
+
+.foootervip h2{
+  color: #fff;
+  padding-top: 20px;
+}
+
+.footer-direitos {
+  text-align: center;
+}
+
+.foootervip hr {
+  border-color: #003b3a;
+}
+
+.social {
+  display: inline-block;
+}
+
+.btn {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #669a85;
+  border-style: solid;
+  background-color: #12654c;
+  color: #fff;
+  float: right;
 }
 
 .carousel-inner > .item > img,
@@ -110,4 +154,21 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+
+  .parceiros img {
+    padding-bottom: 15px;
+  }
+
+  .logo-sobre {
+    padding-bottom: 20px;
+  }
+
+  .socials {
+   padding-bottom: 20px;
+}
+
+.home-section {
+  padding-bottom: 70px;
+}
+
 }
