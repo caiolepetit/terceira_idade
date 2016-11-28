@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Terceira Idade VIP</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
@@ -19,27 +23,34 @@
 	</head>
   <body>
     <!-- Section menu de navegação -->
-    <section name="navigation">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <header id="navigation">
+      <nav class="navbar navbar-custom .navbar-static-top">
+        <div class="container">
           <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigantionBar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
             <a class="navbar-brand" href="#home">
-              <img alt="terceira idade vip" src="assets/img/logotipo_color.png">
+              <img alt="terceira idade vip" class="img-responsive" src="assets/img/logotipo.png">
             </a>
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#">EVENTOS</a></li>
-            <li><a href="#">PRODUTOS</a></li> 
-            <li><a href="#">MINHA GALERA</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">CONTATO</a></li> 
-          </ul>
+          <div class="collapse navbar-collapse" id="navigantionBar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#eventos">eventos</a></li>
+              <li><a href="#produtos">produtos</a></li> 
+              <li><a href="#minha_galera">minha galera</a></li>
+              <li><a href="#sobre">sobre</a></li>
+              <li><a href="#contato">contato</a></li>  
+            </ul>
+          </div>
         </div>
       </nav>
-    </section>
+    </header>
 
     <!-- Section Home - com o banner <Carrousel> -->
-    <section name="home">
+    <section id="home" class="home-section">
 	  <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -99,241 +110,199 @@
 	  </div>
     </section>
     
-    <!--Eventos -->
-   <div class="container">
-   		<div class="row">
-   			<!-- Calendario -->
-   			<div class="col-md-6">
-   				
-   				<div class="col-md-12">
-						<div class="thumbnail">
-						  <img src="assets/img/eventos/1.png" alt="Bootstrap Thumbnail: Beautiful Bootstrap Thumbnail like Material Design Cards">
-						  <div class="caption">
-							<h3>Bootstrap Thumbnail Customization</h3>
-							<p class="card-description"></p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-						  </div>
-						</div>
-					  </div>
-   				
-   				
-   			</div>
-   			<!-- Slider -->
-   			<div class="col-md-6">
-   				<div class="row">
-   					<div class="col-md-6">
-						<div class="thumbnail">
-						  <img src="assets/img/eventos/1.png" alt="Bootstrap Thumbnail: Beautiful Bootstrap Thumbnail like Material Design Cards">
-						  <div class="caption">
-							<h3>Bootstrap Thumbnail Customization</h3>
-							<p class="card-description"></p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-						  </div>
-						</div>
-					  </div>
-  
-				<div class="col-md-6">
-						<div class="thumbnail">
-						  <img src="assets/img/eventos/2.png" alt="Bootstrap Thumbnail Customization">
-						  <div class="caption">
-							<h3>Bootstrap Cards Design</h3>
-							<p class="card-description"></p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-						  </div>
-						</div>
-					  </div>
-				</div>
-   				<div class="row"></div>
-   					<div class="col-md-6">
-						<div class="thumbnail">
-						  <img src="assets/img/eventos/3.png" alt="Bootstrap Thumbnail: Beautiful Bootstrap Thumbnail like Material Design Cards">
-						  <div class="caption">
-							<h3>Bootstrap Thumbnail Customization</h3>
-							<p class="card-description"></p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-						  </div>
-						</div>
-					  </div>
-  
-				<div class="col-md-6">
-						<div class="thumbnail">
-						  <img src="assets/img/eventos/4.png" alt="Bootstrap Thumbnail Customization">
-						  <div class="caption">
-							<h3>Bootstrap Cards Design</h3>
-							<p class="card-description"></p>
-							<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-						  </div>
-						</div>
-					  </div>
-   			</div>	
-   		</div>
-   </div>
-   <!--Eventos/final -->
+    <!-- Eventos -->
+    <section id="eventos" class="home-section">
+      <div class="container-fluid">
+        <div class="row section-header">
+          <div class="col-md-12"><h2>EVENTOS</h2></div>
+          <div class="col-md-6 col-md-offset-3"><hr class="divisor"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><img src="assets/img/calendario.png" class="img-responsive" alt="Bootstrap Thumbnail: Beautiful Bootstrap Thumbnail like Material Design Cards">
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card1.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card2.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card3.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card4.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card1.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+              <div class="col-md-4">
+                <img src="assets/img/eventos/card/card2.png" class="img-responsive" style="margin-top:30px;">
+              </div>
+            </div>
+          </div>
+        </div>  
+  </div>
+  </section> 
+  <!--Eventos/Final -->
    
-   <!--Minha Galera -->
-	<hr>
-	<section name="minhaGalera">
-		<div class="container">
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/1.png"/></a>
-				</figure>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/2.png"/></a>
-				</figure>
-			</article>	 	
-		
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/3.png"/></a>
-				</figure>
-			</article>	
-
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/4.png"/></a>
-				</figure>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/5.png"/></a>
-				</figure>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/minhagalera/6.png"/></a>
-				</figure>
-			</article>
-						
-		<div class="clear"></div>
-		</div>
-	</section> 
- 	<!--Minha Galera/final -->
-	
-	<!-- Produto -->
-	<hr>
-	<section name="produto">
-		<div class="container">
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/pacote.png"/></a>
-				</figure>
-				<div class="description">
-					<h2>PACOTES</h2>
-					<p>Pacotes de Viagens</p><br/>
-				</div>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/hotel.png"/></a>
-				</figure>
-
-				<div class="description">
-				<h2>HOTÉIS</h2>
-				<p>Hoteis em Nova York</p><br/>
-				</div>
-			</article>	 	
-		
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/cruzeiro.png"/></a>
-				</figure>
-
-				<div class="description">
-				<h2>CRUZEIROS</h2>
-				<p>Cruzeiros no Rio de Janeiro</p><br/>
-				</div>
-			</article>	
-
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/ticket_viagem.png"/></a>
-				</figure>
-				<div class="description">
-					<h2>PASSAGENS</h2>
-					<p>Passagens Aéreas e Rodoviárias</p><br/>
-				</div>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/ticket.png"/></a>
-				</figure>
-
-				<div class="description">
-					<h2>INGRESSOS</h2>
-					<p>Ingressos de Shows</p><br/>
-				</div>
-			</article>
-			
-			<article class="grid_Viagens">
-				<figure>
-					<a href="http://www.cvc.com.br/index.aspx"><img src="assets/img/produtos/pacote_2.png"/></a>
-				</figure>
-
-				<div class="description">
-					<h2>PACOTES</h2>
-					<p>Pacotes de Vagens</p><br/>
-				</div>
-			</article>
-						
-		<div class="clear"></div>
-		</div>
+  <!-- Produtos -->
+	<section id="produtos" class="home-section">
+		<div class="container-fluid">
+      <div class="row section-header">
+        <div class="col-md-12"><h2>PRODUTOS</h2></div>
+        <div class="col-md-6 col-md-offset-3"><hr class="divisor"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <a href="http://www.cvc.com.br/index.aspx">
+            <img src="assets/img/produtos/pacote.png" class="center-block" style="height: 80px;"/>
+          </a>
+          <h3 class="text-center">PACOTES</h3>
+					<p class="text-center">Pacotes de Viagens</p><br/>
+        </div>
+                
+        <div class="col-md-2">
+          <a href="http://www.cvc.com.br/index.aspx">
+            <img src="assets/img/produtos/hotel.png" class="center-block" style="height: 80px;"/></a>
+          <h3 class="text-center">HOTEIS</h3>
+					<p class="text-center">Hoteis em Nova York</p><br/>
+        </div>
+                
+        <div class="col-md-2">
+          <a href="http://www.cvc.com.br/index.aspx">
+            <img src="assets/img/produtos/cruzeiro.png" class="center-block" style="height: 80px;"/></a>
+          <h3 class="text-center">CRUZEIROS</h3>
+    			<p class="text-center">Cruzeiros no Rio de Janeiro</p><br/>
+        </div>
+                
+        <div class="col-md-2">
+          <a href="http://www.cvc.com.br/index.aspx">
+            <img src="assets/img/produtos/ticket_viagem.png" class="center-block" style="height: 80px;"/></a>
+          <h3 class="text-center">PASSAGENS</h3>
+					<p class="text-center">Passagens aereas e rodoviarias</p><br/>
+        </div>
+                
+        <div class="col-md-2">
+          <a href="http://www.cvc.com.br/index.aspx">
+            <img src="assets/img/produtos/ticket.png" class="center-block" style="height: 80px;"/></a>
+          <h3 class="text-center">INGRESSOS</h3>
+					<p class="text-center">Ingressos de Shows</p><br/>
+         </div>
+      </div>
+    </div>
 	</section> 	
-	<!-- Produto final -->
+	<!-- Produtos final -->  
    
+<!-- Minha galera -->
+<section id="minha_galera" class="home-section">
+<div class="container">
+  <div class="row section-header">
+    <div class="col-md-12"><h2>MINHA GALERA</h2></div>
+    <div class="col-md-6 col-md-offset-3"><hr class="divisor"></div>
+  </div>
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a title="Image 1" data-toggle="modal" href="#myModal">
+        <img class="thumbnail img-responsive" src="assets/img/minhagalera/1.png">
+      </a>
+      <div class="caption">
+        <h3 class="text-center">Nome do evento</h3>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/1.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/2.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/3.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/4.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/5.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/6.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 8" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/7.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 9" href="#"><img class="thumbnail img-responsive" src="assets/img/minhagalera/8.png"></a></div>
+      
+  
+    <hr>
+  </div>
+</div>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+	
+	
    
-   <!-- Sobre -->
-   <hr>
-   <section name="sobre">
-     <div class="sobrevip" style="margin:0 auto;"> 
-       <h2 style="text-align:center; color: Black;">SOBRE</h2>
-       <div class="container">
-         <div class="row">
-           <div> <img src="assets/img/logotipo_color.png" alt="facebook" width="172" height="71" class="img-responsive" style="display:inline-block;"> 
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           </div>
-         </div>   
-       </div> 
-     </div>
+  <!-- Sobre -->
+  <section id="sobre" class="home-section">
+    <div class="container">
+      <div class="row section-header">
+        <div class="col-md-12"><h2>SOBRE</h2></div>
+        <div class="col-md-6 col-md-offset-3"><hr class="divisor"></div>
+      </div>
+     	<div class="row">
+        <div class="col-md-2">
+          <img src="assets/img/logotipo_color.png" alt="logo terceira idadade vip" width="172" height="71" class="img-responsive"></div>
+        <div class="col-md-10"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div> 
+      </div>
+      <div class="row">
+        <h3 class="text-center">NOSSOS PARCEIROS</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/cvc.jpg" alt="CVC" class="img-responsive">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/prevent.jpg" alt="Prevent Senior" class="img-responsive">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/submarino.jpg" alt="Submarino Viagens"  class="img-responsive">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/booking.png" alt="Clube Piratininga"  class="img-responsive">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/aproveitando.jpg" alt="Aproveitando a Terceira Idade" class="img-responsive">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/parceiros/donato.jpg" alt="Donato Viagens" class="img-responsive">
+        </div>
+      </div>
+    </div>
    </section>
    <!-- Sobre/Final -->
-
-   <!--Parceiros-->
-   <section name="parceiros">
-   <div class="parceiros" style="margin:0 auto;"> 
-     <h2 style="text-align:center; color: Black;">NOSSOS PARCEIROS</h2>
-     <div class="container"> 
-       <div align="center" class="row"> 
-	     <br>
-         <!-- logos parceiros -->
-         <img src="assets/img/parceiros/cvc.jpg" alt="CVC"  class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/prevent.jpg" alt="Prevent Senior" class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/submarino.jpg" alt="Submarino Viagens"  class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/booking.png" alt="Clube Piratininga"  class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/aproveitando.jpg" alt="Aproveitando a Terceira Idade" class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/donato.jpg" alt="Donato Viagens" class="img-responsive" style="display:inline-block;"> 
-		 <img src="assets/img/parceiros/nestle.jpg" alt="Donato Viagens" class="img-responsive" style="display:inline-block;"> 
-         <br>
-         <br>
-       </div>
-      </div>   
-     </div> 
-   </div>
-   </section>	
-   <!--Parceiros/Final-->
  
 	<!-- Footer -->
-	<section name="footer">
+	<footer id="contato">
 	  <div class="foootervip" style="margin:0 auto;"> 
-        <h2 style="text-align:center; color: white;">CONTATO</h2>
-    	<div class="container">
+      	<br>
+        <h2 style="text-align:center; margin-top: 20px; color: white;">CONTATO</h2>
+    	<br>
+        <div class="container">
           <div class="row">
             <div class="col-md-6" style="color: white;">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -374,6 +343,6 @@
         </div> 
         <p style="color:white; text-align:center;">Terceira Idade - Todos os direitos reservados</p>
     </div>
-	</section>
+	</footer>
   </body>
 </html>
