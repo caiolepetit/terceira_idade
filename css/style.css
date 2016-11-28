@@ -6,16 +6,16 @@
 #d7ffee
 */
 
-body {
-	background-color: #ffffe9; 
-	font-family: 'Nunito', sans-serif;
-}
+/* Navbar */
 
 .navbar-custom {
-	height: 100px;
   background-color:#003b3a;
   color:#ffffff;
   border-radius:0;
+}
+
+.navbar-brand {
+  height: 100px;
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -39,6 +39,17 @@ body {
   background-color: rgba(255,255,255,.2);
 }
 
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* Configurações */
+
+body {
+  background-color: #ffffe9; 
+  font-family: 'Nunito', sans-serif;
+}
+
 h2 {
 	text-align: center;
 	font-family: 'Nunito', sans-serif;
@@ -51,20 +62,33 @@ h2 {
 }
 
 .home-section {
-  /*padding-top: 110px;*/
   padding-bottom: 110px;
-	display:block;
-  position:relative;
-  z-index:120;
-  margin:0 auto;
 }
 
 .divisor {
 	border-style: solid;
 	border-color: #003b3a;
 	border-radius: 20px;
-	border-width: 4px 0 0 0;
+	border-width: 2px 0 0 0;
 }
+
+/* Minha Galera */
+
+.thumbnail {
+  background-color: transparent;
+}
+
+.thumbnail .caption h3 {
+  font-size: 22px;
+}
+
+/* Sobre */
+
+.parceiros h3{
+  padding-bottom: 20px;
+}
+
+/* Footer */
 			
 .foootervip {
 	/*position: relative;*/
@@ -79,4 +103,11 @@ h2 {
 .carousel-inner > .item > a > img {
   width: 100%;
   margin: auto;
+}
+
+@media (max-width:480px) {
+  .navbar-custom .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
