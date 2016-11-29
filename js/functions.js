@@ -1,17 +1,110 @@
-var tamanhotexto = new Number();
-var tamanhotexto = 16;
-	function tamanhooriginal(){
-		document.getElementById("myCarousel").style.fontSize = 16 + 'px';
-	}
-function fonte(e){
-	var elemento = document.getElementById("myCarousel");
-	var atual = elemento.style.fontSize;
-	if(e == 'mais'){
-		atual = parseInt(atual) + 2 + 'px';
-	}else if (e == 'menos') {
-		atual = parseInt(atual) - 2 + 'px';
-	}else if (e == '100%') {
-		atual = tamanhotexto + 'px';
-	}
-	elemento.style.fontSize = atual;
-}
+var $z = jQuery.noConflict();
+$z(document).ready(function(){
+	$z("#aumentar-fonte-carousel").click(function () {
+		var size = $z(".carousel-caption h3").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption h3").animate({'font-size' : size + 'px'});
+
+		var size = $z(".carousel-caption p").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption p").animate({'font-size' : size + 'px'});
+
+		return false;
+	});
+
+	$z("#diminuir-fonte-carousel").click(function () {
+	var size = $z(".carousel-caption h3").css('font-size');
+
+	size = size.replace('px', '');
+	size = parseInt(size) - 2;
+
+	$z(".carousel-caption h3").animate({'font-size' : size + 'px'});
+
+	var size = $z(".carousel-caption p").css('font-size');
+
+	size = size.replace('px', '');
+	size = parseInt(size) - 2;
+
+	$z(".carousel-caption p").animate({'font-size' : size + 'px'});
+
+	return false;
+	});
+
+	$z("#aumentar-fonte-produtos").click(function () {
+		var size = $z(".fonte-produto h3").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".fonte-produto h3").animate({'font-size' : size + 'px'});
+
+		var size = $z(".fonte-produto p").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".fonte-produto p").animate({'font-size' : size + 'px'});
+
+		return false;
+	});
+
+	$z("#diminuir-fonte-produtos").click(function () {
+		var size = $z(".fonte-produto h3").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) - 2;
+
+		$z(".fonte-produto h3").animate({'font-size' : size + 'px'});
+
+		var size = $z(".fonte-produto p").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) - 2;
+
+		$z(".fonte-produto p").animate({'font-size' : size + 'px'});
+
+		return false;
+	});
+
+	$z("#aumentar-fonte-sobre").click(function () {
+		var size = $z(".carousel-caption h3").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption h3").animate({'font-size' : size + 'px'});
+
+		var size = $z(".carousel-caption p").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption p").animate({'font-size' : size + 'px'});
+
+		return false;
+	});
+
+	$z("#aumentar-fonte-contato").click(function () {
+		var size = $z(".carousel-caption h3").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption h3").animate({'font-size' : size + 'px'});
+
+		var size = $z(".carousel-caption p").css('font-size');
+
+		size = size.replace('px', '');
+		size = parseInt(size) + 2;
+
+		$z(".carousel-caption p").animate({'font-size' : size + 'px'});
+
+		return false;
+	});
+});

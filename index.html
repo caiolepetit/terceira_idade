@@ -23,13 +23,13 @@
     <!-- W3 card -->
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css"/>
 
-    <!-- JavaScript -->
-    <script src="js/functions.js" type="text/javascript"></script>
-
     <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-      
+
+    <!-- JavaScript -->
+    <script src="js/functions.js" type="text/javascript"></script>
+
 	</head>
   <body>
     <!-- Section menu de navegação -->
@@ -62,6 +62,18 @@
     <!-- Section Home - com o banner <Carrousel> -->
     <section id="home" class="home-section">
   	  <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="btn-group pull-right btn-fonte" role="group" aria-label="...">
+              <button id="aumentar-fonte-carousel" type="button" class="btn btn-default" alt="aumentar fonte">
+                Aumentar <span class="glyphicon glyphicon-font"></span>  
+              </button>
+              <button id="diminuir-fonte-carousel" type="button" class="btn btn-default" alt="diminuir fonte">
+                Diminuir <span class="glyphicon glyphicon-font"></span>
+              </button>
+            </div>
+          </div>
+        </div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -76,7 +88,7 @@
               <img src="assets/img/banner/banner1.png" alt="Chania" width="460" height="345"/>
               <div class="carousel-caption">
                 <h3>Chania</h3>
-  		           <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+  		          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
   		        </div>
             </div>
   	        <div class="item">
@@ -111,9 +123,6 @@
     		    <span class="sr-only">Next</span>
     		  </a>
         </div>
-        <button class="btn" onclick="fonte('mais')">+</button>
-        <button class="btn" onclick="fonte('menos')">-</button>
-        <button class="btn" onclick="fonte('100%')">100%</button>
         <div class="row text-center footer-section">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <a href="#topo">
@@ -185,7 +194,19 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-sm-12 col-md-12">
+          <div class="btn-group pull-right btn-fonte" role="group" aria-label="...">
+            <button id="aumentar-fonte-produtos" type="button" class="btn btn-default" alt="aumentar fonte">
+              Aumentar<span class="glyphicon glyphicon-font"></span>  
+            </button>
+            <button id="#diminuir-fonte-produtos" type="button" class="btn btn-default" alt="diminuir fonte">
+              Diminuir <span class="glyphicon glyphicon-font"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 fonte-produto">
           <a href="http://www.cvc.com.br/index.aspx">
             <img src="assets/img/produtos/pacote.png" class="center-block imagem-pacotes" alt="pacotes de viagens"/>
           </a>
@@ -193,7 +214,7 @@
 					<p class="text-center">Pacotes de Viagens</p>
         </div>
                 
-        <div class="col-md-2">
+        <div class="col-md-2 fonte-produto">
           <a href="http://www.cvc.com.br/index.aspx">
             <img src="assets/img/produtos/hotel.png" class="center-block imagem-pacotes" alt="hóteis em nova york"/>
           </a>
@@ -201,7 +222,7 @@
 					<p class="text-center">Hoteis em Nova York</p>
         </div>
                 
-        <div class="col-md-2">
+        <div class="col-md-2 fonte-produto">
           <a href="http://www.cvc.com.br/index.aspx">
             <img src="assets/img/produtos/cruzeiro.png" class="center-block imagem-pacotes" alt="cruzeiros no rio de janeiro"/>
           </a>
@@ -209,15 +230,15 @@
     			<p class="text-center">Cruzeiros no Rio de Janeiro</p>
         </div>
                 
-        <div class="col-md-2">
+        <div class="col-md-2 fonte-produto">
           <a href="http://www.cvc.com.br/index.aspx">
             <img src="assets/img/produtos/ticket_viagem.png" class="center-block imagem-pacotes" alt="passagens aéreas e rodoviárias"/>
           </a>
           <h3 class="text-center">PASSAGENS</h3>
 					<p class="text-center">Passagens aéreas e rodoviárias</p>
         </div>
-                
-        <div class="col-md-2">
+                 
+        <div class="col-md-2 fonte-produto">
           <a href="http://www.cvc.com.br/index.aspx">
             <img src="assets/img/produtos/ticket.png" class="center-block imagem-pacotes" alt="ingressos de shows"/>
           </a>
@@ -511,6 +532,18 @@
           <hr class="divisor"/>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="btn-group pull-right btn-fonte" role="group" aria-label="...">
+            <button id="aumentar-fonte-carousel" type="button" class="btn btn-default" alt="aumentar fonte">
+              Aumentar <span class="glyphicon glyphicon-font"></span>  
+            </button>
+            <button id="diminuir-fonte-carousel" type="button" class="btn btn-default" alt="diminuir fonte">
+              Diminuir <span class="glyphicon glyphicon-font"></span>
+            </button>
+          </div>
+        </div>
+      </div>
      	<div class="row">
         <div class="col-md-2 col-xs-12">
           <img src="assets/img/logotipo_color.png" alt="logo terceira idadade vip" class="img-responsive center-block logo-sobre"/>
@@ -558,6 +591,18 @@
 	  <div class="foootervip"> 
       <h2>CONTATO</h2>
       <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="btn-group pull-right btn-fonte" role="group" aria-label="...">
+              <button id="aumentar-fonte-carousel" type="button" class="btn btn-default" alt="aumentar fonte">
+                Aumentar <span class="glyphicon glyphicon-font"></span>  
+              </button>
+              <button id="diminuir-fonte-carousel" type="button" class="btn btn-default" alt="diminuir fonte">
+                Diminuir <span class="glyphicon glyphicon-font"></span>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6 col-xs-12">
             <p class="text-justified" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
