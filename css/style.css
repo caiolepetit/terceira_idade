@@ -6,23 +6,190 @@
 #d7ffee
 */
 
-body {
-	background-color: #ffffe9; 
-	font-family: 'Nunito', sans-serif;
-}
-			
-.foootervip {
-	/*position: relative;*/
-    background-color: #73b298;
-	background-size:cover;
-	min-width:100px;
-    width: 100%;
-	bottom:0px;
+/* Navbar */
+.navbar-custom {
+  background-color:#003b3a;
+  color:#ffffff;
+  border-radius:0;
 }
 
+.navbar-brand {
+  height: 100px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color:#fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.navbar-custom .navbar-nav > .active > a, 
+.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color:transparent;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+  outline: 0;
+  background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* Configurações */
+
+body {
+  background-color: #ffffe9; 
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	color: #003b3a;
+}
+
+.section-header {
+	margin-bottom: 20px;
+}
+
+.home-section {
+  padding-bottom: 70px;
+}
+
+.footer-section {
+  padding-top: 40px;
+}
+
+.divisor {
+	border-style: solid;
+	border-color: #003b3a;
+	border-radius: 20px;
+	border-width: 2px 0 0 0;
+}
+
+.imagem-eventos {
+  margin-top: 30px;
+}
+
+.imagem-pacotes {
+  height: 80px;
+}
+
+.btn-fonte {
+  margin-bottom: 20px;
+}
+
+/* Minha Galera */
+
+.thumbnail {
+  background-color: transparent;
+}
+
+.thumbnail .caption h3 {
+  font-size: 22px;
+}
+
+/* Produtos */
+.fonte-produto h3 {
+  font-size: 22px;
+}
+
+.fonte-produto p {
+  font-size: 16px;
+}
+
+/* Sobre */
+
+.parceiros-section h3{
+  padding-bottom: 20px;
+}
+
+.logo-sobre {
+  width: 172px;
+  height: 71px;
+}
+
+/* Footer */
+			
+.foootervip {
+  background-color: #73b298;
+	background-size:cover;
+	min-width:100px;
+  width: 100%;
+	padding-bottom: 10px;
+  color: #fff;
+}
+
+.foootervip h2{
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-direitos {
+  text-align: center;
+}
+
+.foootervip hr {
+  border-color: #003b3a;
+}
+
+.social {
+  display: inline-block;
+}
+
+.btn {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #669a85;
+  border-style: solid;
+  background-color: #12654c;
+  color: #fff;
+  float: right;
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  font-size: 30px;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+}
+
+@media (max-width:480px) {
+  .navbar-custom .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .parceiros img {
+    padding-bottom: 15px;
+  }
+
+  .logo-sobre {
+    padding-bottom: 20px;
+  }
+
+  .socials {
+   padding-bottom: 20px;
+}
+
+.home-section {
+  padding-bottom: 70px;
+}
+
 }
